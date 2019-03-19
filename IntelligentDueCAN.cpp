@@ -23,11 +23,11 @@ void CIntelligent_due_CAN::resetdriver(int drv_ID)
     Can0.sendFrame(outgoing);
     delay(500);
 }
-void CIntelligent_due_CAN::setmode(int group=0,int number=0,int mode=3 )
+void CIntelligent_due_CAN::setmode(int drv_ID,int mode )
 {
     //CAN_FRAME outgoing;
     //outgoing.id = temp;//0x021;
-    outgoing.id = (0x600+driver_ID);
+    outgoing.id = (0x600+drv_ID);
     outgoing.extended = false;
     outgoing.length=8;
     outgoing.priority = 4; //0-15 lower is higher priority
