@@ -17,7 +17,6 @@ private:
     int driver_mode;
     int driver_ID;
     CAN_FRAME outgoing;
-    // void resetdriver(int group,int number );
     void resetdriver(int drv_ID );
     void setmode(int drv_ID,int mode );
 public:
