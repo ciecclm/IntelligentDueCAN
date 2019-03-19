@@ -9,7 +9,7 @@
 CIntelligent_due_CAN::CIntelligent_due_CAN()
 {
     driver_mode=3;
-    driver_ID=0；
+    driver_ID=0;
 }
 
 void CIntelligent_due_CAN::resetdriver(int drv_ID)
